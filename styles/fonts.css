@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-display: swap;
+  font-synthesis: weight style small-caps;
+  src:
+    local("Inter"),
+    url("/fonts/static/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-display: swap;
+  font-synthesis: weight style small-caps;
+  src:
+    local("Inter"),
+    url("/fonts/static/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-display: swap;
+  font-synthesis: weight style small-caps;
+  src:
+    local("Inter"),
+    url("/fonts/static/Inter-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  font-synthesis: weight style small-caps;
+  src:
+    local("Inter"),
+    url("/fonts/static/Inter-Bold.woff2") format("woff2");
+}
