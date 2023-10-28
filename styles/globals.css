@@ -3,3 +3,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2.25rem;
+}
+
+header.active {
+  transition: all 1s ease-in-out;
+}
+
+nav {
+  transition: all 1s ease-in-out;
+}
+
+button,
+button > span {
+  transition: all .3s ease-in-out;
+}
+
+button > span {
+  display: block;
+  background-color: theme(backgroundColor.black);
+  width: 2rem;
+  height: .313rem;
+}
+
+button > span:not(:last-child) {
+  margin-bottom: .375rem;
+}
+
+button.active {
+  transition-delay: .3s;
+  transform: rotate(45deg);
+}
+
+button.active > span:nth-child(2) {
+  width: 0;
+}
+
+button.active > span:nth-child(1),
+button.active > span:nth-child(3) {
+  transition-delay: .3s;
+}
+
+button.active > span:nth-child(1) {
+  transform: translateY(.625rem);
+}
+
+button.active > span:nth-child(3) {
+  transform: translateY(-.75rem) rotate(90deg);
+}
+
+ul {
+  transition: transform 1s ease-in-out;
+}
+
+.nav__ul--show {
+  transform: translateY(0);
+}
