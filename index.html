@@ -1,566 +1,335 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirp Landing Page</title>
-    <link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/globals.css" />
-  </head>
-  <body class="font-body">
+    <link rel="shortcut icon" href="/vite.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/globals.css">
+</head>
+<body class="font-body">
     <div class="mx-auto w-full max-w-[90rem]">
-      <header class="sticky inset-0 w-full bg-off-white">
-        <nav
-          class="z-50 mx-auto flex h-24 w-[80%] items-center justify-between max-lg:w-[90%]"
-        >
-          <a href="#" class="font-bold text-cobalt-blue">
-            <em> Chirp. </em>
-          </a>
-
-          <button
-            class="max-sm:z-50 max-sm:block max-sm:cursor-pointer max-sm:border-none sm:hidden"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul
-            class="flex -translate-y-full items-center justify-center gap-6 bg-off-white text-center max-sm:fixed max-sm:inset-0 max-sm:flex-col sm:-translate-y-0"
-          >
-            <li>
-              <a
-                class="text-medium-gray transition-colors duration-300 hover:text-bright-blue"
-                href="#home"
-                title="Home"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-medium-gray transition-colors duration-300 hover:text-bright-blue"
-                href="#pricing"
-                title="Pricing"
-                >Pricing</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-medium-gray transition-colors duration-300 hover:text-bright-blue"
-                href="#faq"
-                title="FAQ"
-                >FAQ</a
-              >
-            </li>
-            <li
-              class="rounded-[.25rem] bg-bright-blue shadow-black transition-all duration-300 hover:shadow-xl"
-            >
-              <a
-                class="font-bold text-white"
-                href="#"
-                title="Sign in with Twitter"
-              >
-                <figure class="flex gap-3 px-6 py-4">
-                  <img src="./assets/Twitter.svg" alt="Twitter icon" />
-                  <figcaption>Sign in with Twitter</figcaption>
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section class="bg-off-white" id="home">
-          <div class="mx-auto flex w-[80%] max-lg:w-[90%] max-lg:flex-col">
-            <div class="pt-14 max-lg:pb-8 max-lg:pt-6 max-sm:pt-8">
-              <h1
-                class="mb-2 w-[86%] text-[3.125rem] font-bold leading-[3.75rem] text-black max-lg:w-[81%] max-sm:text-[2.047rem] max-sm:leading-10"
-              >
-                Twitter analytics taken to a whole new level.
-              </h1>
-              <p class="mb-4 w-[83%] text-gray max-lg:w-[88%] max-sm:w-[97%]">
-                Chirp is a suite of Twitter analytics that will help you better
-                understand your audience, which tweets they like, and most
-                importantly, when they are the most active on Twitter.
-              </p>
-
-              <div
-                class="mb-7 flex items-center gap-4 max-sm:flex-col max-sm:items-stretch"
-              >
-                <a
-                  class="inline-block font-bold text-white shadow-black transition-all duration-300 hover:shadow-xl max-sm:block"
-                  href="#"
-                  title="Sign in with Twitter"
-                >
-                  <figure
-                    class="flex gap-3 rounded-[.25rem] bg-bright-blue px-6 py-4 max-sm:justify-center"
-                  >
-                    <img src="./assets/Twitter.svg" alt="Twitter icon" />
-                    <figcaption>Sign in with Twitter</figcaption>
-                  </figure>
+        <header class="sticky inset-0 w-full bg-off-white">
+            <nav class="z-50 mx-auto flex h-24 w-[80%] items-center justify-between max-lg:w-[90%]">
+                <a href="#" class="font-bold text-cobalt-blue">
+                    <em>
+                        Chirp.
+                    </em>
                 </a>
+    
+                <button class="max-sm:z-50 max-sm:block max-sm:cursor-pointer max-sm:border-none sm:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+                <ul class="flex -translate-y-full items-center justify-center gap-6 bg-off-white text-center max-sm:fixed max-sm:inset-0 max-sm:flex-col sm:-translate-y-0">
+                    <li>
+                        <a class="text-medium-gray transition-colors duration-300 hover:text-bright-blue" href="#home" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-medium-gray transition-colors duration-300 hover:text-bright-blue" href="#pricing" title="Pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="text-medium-gray transition-colors duration-300 hover:text-bright-blue" href="#faq" title="FAQ">FAQ</a>
+                    </li>
+                    <li class="rounded-[.25rem] bg-bright-blue shadow-black transition-all duration-300 hover:shadow-xl">
+                        <a class="font-bold text-white" href="#" title="Sign in with Twitter">
+                            <figure class="flex gap-3 px-6 py-4">
+                                <img src="./assets/Twitter.svg" alt="Twitter icon">
+                                <figcaption>Sign in with Twitter</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="bg-off-white" id="home">
+                <div class="mx-auto flex w-[80%] max-lg:w-[90%] max-lg:flex-col">
 
-                <a
-                  class="flex items-center gap-1 font-bold text-deep-blue max-sm:mx-auto"
-                  href="#"
-                >
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-4 w-4"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
-                </a>
-              </div>
+                    <div class="pt-14 max-lg:pb-8 max-lg:pt-6 max-sm:pt-8">
 
-              <div class="mb-4 flex">
-                <figure class="max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
-                  <img
-                    src="./assets/userAvatar09.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                        <h1 class="mb-2 w-[86%] text-[3.125rem] font-bold leading-[3.75rem] text-black max-lg:w-[81%] max-sm:text-[2.047rem] max-sm:leading-10">Twitter analytics taken to a whole new level.</h1>
+                        <p class="mb-4 w-[83%] text-gray max-lg:w-[88%] max-sm:w-[97%]">Chirp is a suite of Twitter analytics that will help you better understand your audience, which tweets they like, and most importantly, when they are the most active on Twitter.</p>
 
-                <figure
-                  class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar08.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                        <div class="mb-7 flex items-center gap-4 max-sm:flex-col max-sm:items-stretch">
+                            <a class="inline-block font-bold text-white shadow-black transition-all duration-300 hover:shadow-xl max-sm:block" href="#" title="Sign in with Twitter">
+                                <figure class="flex gap-3 rounded-[.25rem] bg-bright-blue px-6 py-4 max-sm:justify-center">
+                                    <img src="./assets/Twitter.svg" alt="Twitter icon">
+                                    <figcaption>Sign in with Twitter</figcaption>
+                                </figure>
+                            </a>
 
-                <figure
-                  class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar07.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <a class="flex items-center gap-1 font-bold text-deep-blue max-sm:mx-auto" href="#">
+                                Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </a>
+                        </div>
+                
+                        <div class="mb-4 flex">
+                            <figure class="max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar09.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar06.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <figure class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar08.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar05.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <figure class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar07.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar04.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <figure class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar06.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar03.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <figure class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar05.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar02.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
+                            <figure class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar04.svg" alt="Avatar of the person">
+                            </figure>
 
-                <figure
-                  class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]"
-                >
-                  <img
-                    src="./assets/userAvatar01.svg"
-                    alt="Avatar of the person"
-                  />
-                </figure>
-              </div>
+                            <figure class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar03.svg" alt="Avatar of the person">
+                            </figure>
 
-              <p class="w-[76%] text-gray max-lg:w-[71%] max-sm:w-[91%]">
-                Join <strong class="text-deep-blue">195</strong> others who have
-                analyzed their followers and scheduled
-                <strong class="text-deep-blue">1342</strong> tweets!
-              </p>
-            </div>
+                            <figure class="-ml-[1.438rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar02.svg" alt="Avatar of the person">
+                            </figure>
 
-            <div class="pb-12 pt-4 max-lg:-order-1 max-lg:pb-0">
-              <picture>
-                <source
-                  srcset="./assets/Hero-Image-Desktop-View.png"
-                  media="(min-width: 64rem)"
-                  type="image/png"
-                />
-                <source
-                  srcset="./assets/Hero-Image-Tablet-View.png"
-                  media="(min-width: 40rem)"
-                  type="image/png"
-                />
-                <img
-                  src="./assets/Hero-Image-Desktop-View.png"
-                  class="w-[54.063rem] max-sm:w-full"
-                  alt="Twitter profile stats"
-                />
-              </picture>
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-white">
-          <div
-            class="mx-auto w-[80%] py-16 max-lg:w-[90%] max-lg:pb-20 max-lg:pt-20"
-          >
-            <h2
-              class="mb-8 w-[44%] text-[2.125rem] font-bold leading-10 text-black max-lg:mb-6 max-lg:w-[54%] max-sm:w-full max-sm:text-[1.993rem]"
-            >
-              Features that help you Tweet smarter.
-            </h2>
-            <div
-              class="grid grid-cols-2 gap-x-2 gap-y-9 max-lg:grid-cols-1 max-sm:gap-y-5"
-            >
-              <div
-                class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full"
-              >
-                <span class="mb-1 block text-[2rem]"> 📈 </span>
-                <h3 class="mb-3 font-bold">Analytics</h3>
-                <p class="w-[92%] text-gray max-lg:w-[85%] max-sm:w-[95%]">
-                  We constantly monitor your audience as it grows -- so you can
-                  Tweet when your followers are most likely to be online and
-                  ready to engage with your content.
-                </p>
-              </div>
-
-              <div
-                class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full"
-              >
-                <span class="mb-1 block text-[2rem]"> 🤓 </span>
-                <h3 class="mb-3 font-bold">Smart Analyzer</h3>
-                <p class="w-[93%] text-gray max-lg:w-[86%]">
-                  Chirp automatically recognizes your followers´ most active
-                  times and automatically sends you notifications if you're
-                  missing out on an opportunity.
-                </p>
-              </div>
-
-              <div
-                class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full"
-              >
-                <span class="mb-1 block text-[2rem]"> 🗞️ </span>
-                <h3 class="mb-3 font-bold">Scheduled Your Tweets</h3>
-                <p class="w-[95%] text-gray max-lg:w-[85%] max-sm:w-[92%]">
-                  Quality tweets drive tons of engagement. With chirp, you can
-                  write tweets in an advance and schedule them when your
-                  audience is most likely to read.
-                </p>
-              </div>
-
-              <div
-                class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full"
-              >
-                <span class="mb-1 block text-[2rem]"> ☀ </span>
-                <h3 class="mb-3 font-bold">Dark Mode</h3>
-                <p class="w-[93%] text-gray max-lg:w-[88%] max-sm:w-[92%]">
-                  Friendly on the eyes, no matter what time you write your
-                  Tweets. All colors are chosen to make sure your eyes are at
-                  ease at all times.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-light-cyan" id="faq">
-          <div
-            class="mx-auto w-[80%] pb-[4.25rem] pt-14 max-lg:w-[90%] max-sm:pb-12"
-          >
-            <h4
-              class="mb-8 text-[2.125rem] font-bold text-black max-sm:mb-10 max-sm:text-[2.11rem] max-sm:leading-10"
-            >
-              What our customers say
-            </h4>
-
-            <article
-              class="grid grid-cols-3 gap-4 max-lg:gap-6 max-sm:grid-cols-1 max-sm:gap-5"
-            >
-              <div
-                class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg"
-              >
-                <a class="" href="#">
-                  <figure class="mb-4 flex items-center gap-2">
-                    <img
-                      class="h-[3.75rem]"
-                      src="./assets/userAvatar01.svg"
-                      alt="Avatar of a user"
-                      loading="lazy"
-                    />
-                    <figcaption class="flex flex-col">
-                      <span class="font-bold">Sara May</span>
-                      <span class="text-gray">@sara_may</span>
-                    </figcaption>
-                    <figure class="ml-auto">
-                      <img
-                        src="./assets/Twitter (Blue).svg"
-                        alt="Icon of twitter"
-                        loading="lazy"
-                      />
-                    </figure>
-                  </figure>
-                </a>
-
-                <p class="mb-4 w-[88%] text-gray max-lg:w-full max-sm:w-[90%]">
-                  I just tried out @chirp and it's amazing, love all the
-                  analytics I can see.
-                </p>
-                <div class="flex justify-between">
-                  <figure class="flex gap-[.375rem]">
-                    <img
-                      src="./assets/Like.svg"
-                      alt="Icon of heart for like"
-                      loading="lazy"
-                    />
-                    <figcaption class="text-gray">2</figcaption>
-                  </figure>
-                  <p class="text-gray">March 2, 2021</p>
+                            <figure class="-ml-[1.375rem] max-lg:w-[2.719rem] max-sm:w-[2.672rem]">
+                                <img src="./assets/userAvatar01.svg" alt="Avatar of the person">
+                            </figure>
+                        </div>
+                        <p class="w-[76%] text-gray max-lg:w-[71%] max-sm:w-[91%]">Join <strong class="text-deep-blue">195</strong> others who have analyzed their followers and scheduled <strong class="text-deep-blue">1342</strong> tweets!</p>
+                    </div>
+             
+                    <div class="pb-12 pt-4 max-lg:-order-1 max-lg:pb-0">
+                        <picture>
+                            <source srcset="./assets/Hero-Image-Desktop-View.png" media="(min-width: 64rem)" type="image/png">
+                            <source srcset="./assets/Hero-Image-Tablet-View.png" media="(min-width: 40rem)" type="image/png">
+                            <img src="./assets/Hero-Image-Desktop-View.png" class="w-[54.063rem] max-sm:w-full" alt="Twitter profile stats">
+                        </picture>
+                    </div>
+                    
                 </div>
-              </div>
+            </section>
+    
+            <section class="bg-white">
+                <div class="mx-auto w-[80%] py-16 max-lg:w-[90%] max-lg:pb-20 max-lg:pt-20">
 
-              <div
-                class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg"
-              >
-                <a href="#">
-                  <figure class="mb-4 flex items-center gap-2">
-                    <img
-                      class="h-[3.75rem]"
-                      src="./assets/userAvatar04.svg"
-                      alt="Avatar of a user"
-                      loading="lazy"
-                    />
-                    <figcaption class="flex flex-col">
-                      <span class="font-bold max-lg:w-[90%]">Jack Scott</span>
-                      <span class="text-gray">@jackscott_</span>
-                    </figcaption>
-                    <figure class="ml-auto">
-                      <img
-                        src="./assets/Twitter (Blue).svg"
-                        alt="Icon of twitter"
-                        loading="lazy"
-                      />
-                    </figure>
-                  </figure>
-                </a>
-
-                <p class="mb-4 w-[89%] text-gray max-lg:w-full max-sm:w-[91%]">
-                  I initially started using Chirp to support the co-founder as I
-                  personally knew him, but after having tried it out for a few
-                  weeks, I can genuinely say this changed my Twitter game.
-                </p>
-                <div class="flex justify-between">
-                  <figure class="flex gap-[.375rem]">
-                    <img
-                      src="./assets/Like.svg"
-                      alt="Icon of heart for like"
-                      loading="lazy"
-                    />
-                    <figcaption class="text-gray">32</figcaption>
-                  </figure>
-                  <p class="text-gray">March 2, 2021</p>
+                    <h2 class="mb-8 w-[44%] text-[2.125rem] font-bold leading-10 text-black max-lg:mb-6 max-lg:w-[54%] max-sm:w-full max-sm:text-[1.993rem]">Features that help you Tweet smarter.</h2>
+                    <div class="grid grid-cols-2 gap-x-2 gap-y-9 max-lg:grid-cols-1 max-sm:gap-y-5">
+        
+                        <div class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full">
+                            <span class="mb-1 block text-[2rem]">
+                                📈
+                            </span>
+                            <h3 class="mb-3 font-bold">
+                                Analytics
+                            </h3>
+                            <p class="w-[92%] text-gray max-lg:w-[85%] max-sm:w-[95%]">
+                                We constantly monitor your audience as it grows -- so you can Tweet when your followers are most likely to be online and ready to engage with your content.
+                            </p>
+                        </div>
+                        
+                        <div class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full">
+                            <span class="mb-1 block text-[2rem]">
+                                🤓
+                            </span>
+                            <h3 class="mb-3 font-bold">
+                                Smart Analyzer
+                            </h3>
+                            <p class="w-[93%] text-gray max-lg:w-[86%]">
+                                Chirp automatically recognizes your followers´ most active times and automatically sends you notifications if you're missing out on an opportunity.
+                            </p>
+                        </div>
+                        
+                        <div class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full">
+                            <span class="mb-1 block text-[2rem]">
+                                🗞️
+                            </span>
+                            <h3 class="mb-3 font-bold">
+                                Scheduled Your Tweets
+                            </h3>
+                            <p class="w-[95%] text-gray max-lg:w-[85%] max-sm:w-[92%]">
+                                Quality tweets drive tons of engagement. With chirp, you can write tweets in an advance and schedule them when your audience is most likely to read.
+                            </p>
+                        </div>
+                        
+                        <div class="w-[95%] rounded-[.25rem] border border-solid border-gray-light pb-5 pl-5 pt-4 transition-all duration-500 hover:scale-105 max-lg:w-full">
+                            <span class="mb-1 block text-[2rem]">
+                                ☀
+                            </span>
+                            <h3 class="mb-3 font-bold">
+                                Dark Mode
+                            </h3>
+                            <p class="w-[93%] text-gray max-lg:w-[88%] max-sm:w-[92%]">
+                                Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to make sure your eyes are at ease at all times.
+                            </p>
+                        </div>
+        
+                    </div>
                 </div>
-              </div>
+            </section>
 
-              <div
-                class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg"
-              >
-                <a href="#">
-                  <figure class="mb-4 flex items-center gap-2">
-                    <img
-                      class="h-[3.75rem]"
-                      src="./assets/userAvatar02.svg"
-                      alt="Avatar of a user"
-                      loading="lazy"
-                    />
-                    <figcaption class="flex flex-col">
-                      <span class="font-bold">Jessica May</span>
-                      <span class="text-gray">@jmay98</span>
-                    </figcaption>
-                    <figure class="ml-auto">
-                      <img
-                        src="./assets/Twitter (Blue).svg"
-                        alt="Icon of twitter"
-                        loading="lazy"
-                      />
-                    </figure>
-                  </figure>
-                </a>
+            <section class="bg-light-cyan" id="faq">
+                <div class="mx-auto w-[80%] pb-[4.25rem] pt-14 max-lg:w-[90%] max-sm:pb-12">
 
-                <p class="mb-4 w-[97%] text-gray max-lg:w-full">
-                  Absolutely love everything about Chirp, from the design to how
-                  everything works smoothly.
-                </p>
-                <div class="flex justify-between">
-                  <figure class="flex gap-[.375rem]">
-                    <img
-                      src="./assets/Like.svg"
-                      alt="Icon of heart for like"
-                      loading="lazy"
-                    />
-                    <figcaption class="text-gray">221</figcaption>
-                  </figure>
-                  <p class="text-gray">March 2, 2021</p>
+                    <h4 class="mb-8 text-[2.125rem] font-bold text-black max-sm:mb-10 max-sm:text-[2.11rem] max-sm:leading-10">What our customers say</h4>
+                    
+                    <article class="grid grid-cols-3 gap-4 max-lg:gap-6 max-sm:grid-cols-1 max-sm:gap-5">
+                        
+                        <div class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg">
+                            <a href="#">
+                                <figure class="mb-4 flex items-center gap-2">
+                                    <img class="h-[3.75rem]" src="./assets/userAvatar01.svg" alt="Avatar of a user" loading="lazy">
+                                    <figcaption class="flex flex-col">
+                                        <span class="font-bold">Sara May</span>
+                                        <span class="text-gray">@sara_may</span>
+                                    </figcaption>
+                                    <figure class="ml-auto">
+                                        <img src="./assets/Twitter (Blue).svg" alt="Icon of twitter" loading="lazy">
+                                    </figure>
+                                </figure>
+                            </a>
+                            
+                            <p class="mb-4 w-[88%] text-gray max-lg:w-full max-sm:w-[90%]">I just tried out @chirp and it's amazing, love all the analytics I can see.</p>
+                            <div class="flex justify-between">
+                                <figure class="flex gap-[.375rem]">
+                                    <img src="./assets/Like.svg" alt="Icon of heart for like" loading="lazy">
+                                    <figcaption class="text-gray">2</figcaption>
+                                </figure>
+                                <p class="text-gray">March 2, 2021</p>
+                            </div>
+                        </div>
+            
+                        <div class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg">
+                            <a href="#">
+                                <figure class="mb-4 flex items-center gap-2">
+                                    <img class="h-[3.75rem]" src="./assets/userAvatar04.svg" alt="Avatar of a user" loading="lazy">
+                                    <figcaption class="flex flex-col">
+                                        <span class="font-bold max-lg:w-[90%]">Jack Scott</span>
+                                        <span class="text-gray">@jackscott_</spa>
+                                    </figcaption>
+                                    <figure class="ml-auto">
+                                        <img src="./assets/Twitter (Blue).svg" alt="Icon of twitter" loading="lazy">
+                                    </figure>
+                                </figure>
+                            </a>
+
+                            <p class="mb-4 w-[89%] text-gray max-lg:w-full max-sm:w-[91%]">I initially started using Chirp to support the co-founder as I personally knew him, but after having tried it out for a few weeks, I can genuinely say this changed my Twitter game.</p>
+                            <div class="flex justify-between">
+                                <figure class="flex gap-[.375rem]">
+                                    <img src="./assets/Like.svg" alt="Icon of heart for like" loading="lazy">
+                                    <figcaption class="text-gray">32</figcaption>
+                                </figure>
+                                <p class="text-gray">March 2, 2021</p>
+                            </div>
+                        </div>
+            
+                        <div class="h-fit rounded-md bg-white p-5 shadow-medium-gray transition-all duration-300 hover:shadow-lg">
+                            <a href="#">
+                                <figure class="mb-4 flex items-center gap-2">
+                                    <img class="h-[3.75rem]" src="./assets/userAvatar02.svg" alt="Avatar of a user" loading="lazy">
+                                    <figcaption class="flex flex-col">
+                                        <span class="font-bold">Jessica May</span>
+                                        <span class="text-gray">@jmay98</span>
+                                    </figcaption>
+                                    <figure class="ml-auto">
+                                        <img src="./assets/Twitter (Blue).svg" alt="Icon of twitter" loading="lazy">
+                                    </figure>
+                                </figure>
+                            </a>
+
+                            <p class="mb-4 w-[97%] text-gray max-lg:w-full">Absolutely love everything about Chirp, from the design to how everything works smoothly.</p>
+                            <div class="flex justify-between">
+                                <figure class="flex gap-[.375rem]">
+                                    <img src="./assets/Like.svg" alt="Icon of heart for like" loading="lazy">
+                                    <figcaption class="text-gray">221</figcaption>
+                                </figure>
+                                <p class="text-gray">March 2, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
-              </div>
-            </article>
-          </div>
-        </section>
 
-        <section class="bg-white py-16" id="pricing">
-          <div
-            class="mx-auto flex w-[80%] flex-col items-center max-lg:w-[90%]"
-          >
-            <h5
-              class="text-[2.125rem] font-bold max-sm:mb-2 max-sm:text-center max-sm:leading-10"
-            >
-              One simple price plan.
-            </h5>
-            <p
-              class="mb-14 w-[51%] text-center text-gray max-lg:w-[72%] max-sm:mb-10 max-sm:w-[85%]"
-            >
-              Start growing your Twitter account by analyzing your follower's
-              patterns.
-            </p>
+            </section>
+    
+            <section class="bg-white py-16" id="pricing">
+                <div class="mx-auto flex w-[80%] flex-col items-center max-lg:w-[90%]">
 
-            <div
-              class="rounded-lg border border-bright-orange bg-off-white px-9 py-8 transition-shadow duration-300 hover:shadow-md hover:shadow-bright-orange max-sm:px-0 max-sm:pb-8 max-sm:pt-6"
-            >
-              <span
-                class="-mb-1 inline-block text-[1.3rem] text-gray max-sm:px-9"
-                >Monthly</span
-              >
-              <span class="mb-3 flex text-[3.125rem] font-bold max-sm:px-9"
-                >$9
-                <span class="mt-5 self-center text-2xl font-normal text-gray"
-                  >/mo</span
-                >
-              </span>
+                    <h5 class="text-[2.125rem] font-bold max-sm:mb-2 max-sm:text-center max-sm:leading-10">One simple price plan.</h5>
+                    <p class="mb-14 w-[51%] text-center text-gray max-lg:w-[72%] max-sm:mb-10 max-sm:w-[85%]">Start growing your Twitter account by analyzing your follower's patterns.</p>
+                
+                    <div class="rounded-lg border border-bright-orange bg-off-white px-9 py-8 transition-shadow duration-300 hover:shadow-md hover:shadow-bright-orange max-sm:px-0 max-sm:pb-8 max-sm:pt-6">
+                        <span class="-mb-1 inline-block text-[1.3rem] text-gray max-sm:px-9">Monthly</span>
+                        <span class=" mb-3 flex text-[3.125rem] font-bold max-sm:px-9">$9
+                            <span class="mt-5 self-center text-2xl font-normal text-gray">/mo</span>
+                        </span>
 
-              <hr class="mb-4 text-silver-gray max-sm:mx-9 max-sm:mb-5" />
+                        <hr class="mb-4 text-silver-gray max-sm:mx-9 max-sm:mb-5">
 
-              <div class="mb-3 flex flex-col gap-5 max-sm:px-9">
-                <figure class="flex gap-3 max-sm:items-start">
-                  <img
-                    src="./assets/Checkmark.svg"
-                    alt="Icon of verify"
-                    loading="lazy"
-                  />
-                  <figcaption class="text-gray">
-                    Unlimited* scheduled tweets and threads.
-                  </figcaption>
-                </figure>
+                        <div class="mb-3 flex flex-col gap-5 max-sm:px-9">
+                            <figure class="flex gap-3 max-sm:items-start">
+                                <img src="./assets/Checkmark.svg" alt="Icon of verify" loading="lazy">
+                                <figcaption class="text-gray">Unlimited* scheduled tweets and threads.</figcaption>
+                            </figure>
+        
+                            <figure class="flex gap-3 max-sm:items-start">
+                                <img src="./assets/Checkmark.svg" alt="Icon of verify" loading="lazy">
+                                <figcaption class="text-gray">Schedule up to 3 weeks in advance.</figcaption>
+                            </figure>
+        
+                            <figure class="flex items-start gap-3">
+                                <img src="./assets/Checkmark.svg" alt="Icon of verify" loading="lazy">
+                                <figcaption class="w-[92%] text-gray">Real-time audience analytics tracking up to 5k followers.</figcaption>
+                            </figure>
+                        </div>
 
-                <figure class="flex gap-3 max-sm:items-start">
-                  <img
-                    src="./assets/Checkmark.svg"
-                    alt="Icon of verify"
-                    loading="lazy"
-                  />
-                  <figcaption class="text-gray">
-                    Schedule up to 3 weeks in advance.
-                  </figcaption>
-                </figure>
+                        <hr class="mb-4 text-silver-gray max-sm:mx-9 max-sm:mb-5">
 
-                <figure class="flex items-start gap-3">
-                  <img
-                    src="./assets/Checkmark.svg"
-                    alt="Icon of verify"
-                    loading="lazy"
-                  />
-                  <figcaption class="w-[92%] text-gray">
-                    Real-time audience analytics tracking up to 5k followers.
-                  </figcaption>
-                </figure>
-              </div>
+                        <a class="block font-bold text-white max-sm:px-4" href="#" title="Start Trial with Twitter">
+                            <figure class="flex justify-center gap-4 rounded bg-bright-blue px-6 py-4">
+                                <img src="./assets/Twitter.svg" alt="Icon of twitter" loading="lazy">
+                                <figcaption>Start Trial with Twitter</figcaption>
+                            </figure>
+                        </a>
+                    </div>
 
-              <hr class="mb-4 text-silver-gray max-sm:mx-9 max-sm:mb-5" />
-
-              <a
-                class="block font-bold text-white max-sm:px-4"
-                href="#"
-                title="Start Trial with Twitter"
-              >
-                <figure
-                  class="flex justify-center gap-4 rounded bg-bright-blue px-6 py-4"
-                >
-                  <img
-                    src="./assets/Twitter.svg"
-                    alt="Icon of twitter"
-                    loading="lazy"
-                  />
-                  <figcaption>Start Trial with Twitter</figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <section class="bg-light-cyan">
-          <div
-            class="mx-auto flex w-[80%] justify-between py-6 max-lg:w-[90%] max-sm:block"
-          >
-            <a href="#" class="font-bold text-cobalt-blue">
-              <em> Chirp. </em>
-            </a>
-
-            <div class="flex items-center gap-5 max-sm:mt-3">
-              <figure>
-                <img src="./assets/Twitter (Black).svg" alt="Icon of twitter" />
-              </figure>
-
-              <a
-                class="transition-colors duration-300 hover:text-bright-blue"
-                href="#"
-                title="Privacy Policy"
-                >Privacy Policy</a
-              >
-              <a
-                class="transition-colors duration-300 hover:text-bright-blue"
-                href="#"
-                title="Terms of Use"
-                >Terms of Use</a
-              >
-            </div>
-          </div>
-        </section>
-      </footer>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <section class="bg-light-cyan">
+                <div class="mx-auto flex w-[80%] justify-between py-6 max-lg:w-[90%] max-sm:block">
+                    <a href="#" class="font-bold text-cobalt-blue">
+                        <em>
+                            Chirp.
+                        </em>
+                    </a>
+                    
+                    <div class="flex items-center gap-5 max-sm:mt-3">
+                        <figure>
+                            <img src="./assets/Twitter (Black).svg" alt="Icon of twitter">
+                        </figure>
+                        
+                        <a class="transition-colors duration-300 hover:text-bright-blue" href="#" title="Privacy Policy">Privacy Policy</a>
+                        <a class="transition-colors duration-300 hover:text-bright-blue" href="#" title="Terms of Use">Terms of Use</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
 
     <script type="module" src="./main.js"></script>
-  </body>
+</body>
 </html>
